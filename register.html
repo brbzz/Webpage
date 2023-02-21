@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="../Project 1/assets/css/home.css">
+    <link rel="stylesheet" href="../Project 1/assets/css/login.css">
+   
+</head>
+
+<header>
+    <nav>
+        <img src="../Project 1/assets/image/icon.png" alt="">
+        <div id="nav">
+                <a class="menu" href="home.html">Home</a>
+
+
+                <div class="dropdown menu">
+                    <p>Products</p>
+                    <div class="dropdown-content">
+                      <a href="healthcare.html">Healthcare</a>
+                      <a href="cosmetic.html">Cosmetics</a>
+                      <a href="mist.html">Mist</a>
+                    </div>
+                </div>
+
+
+                <a class="menu" href="about_us.html">About Us</a>
+                <a class="menu" href="register.html">Register</a>
+                <a href="login.html" class="tbl-biru menu">Login</a>
+        </div>
+    </nav>
+</header>
+
+<body>
+    <div class="loginContent">
+        <h1 style="font-size: 50px;">Register</h1>
+        <form method="post">
+            <div class="txt_field">
+                <input id="full_name" type="text" required>
+                <label>Full Name</label>
+            </div>
+            <div class="txt_field">
+                <input id="email" type="text" required>
+                <label>Email</label>
+            </div>
+            <div class="gender">
+                <label>Gender</label>
+                <div>
+                    <input type="radio" name="gender" id="gm" value="male" required>Male</input>
+                    <input type="radio" name="gender" id="gm" value="female" required>Female</input>
+                </div>
+            </div>
+            <br>
+            <div class="city">
+                <label>City</label>
+                <select name="city" id="city" required>
+                    <option value="">Select City</option>
+                    <option value="Jakarta">Jakarta</option>
+                    <option value="Bandung">Bandung</option>
+                    <option value="Semarang">Semarang</option>
+                    <option value="Papua">Papua</option>
+                </select>
+            </div>
+            <div class="txt_field">
+                <input id="password" type="password" required>
+                <label>Password</label>
+            </div>
+            <div class="txt_field">
+                <input id="confirm_pass" type="password" required>
+                <label>Confirm Password</label>
+            </div>
+            <!-- <button id="btnsubmit" class="login" onclick="success()"><a href="login.html">Register</a></button> -->
+            <input id="btnsubmit" type="button" value="Register" class="login" onclick="success()">
+        </form>
+    </div>
+</body>
+
+<footer>
+    <div class="logoContainer">
+        <a href="https:www.twitter.com/" target="_blank"><img class="logo" src="../Project 1/assets/image/twitter.jpeg" width="40" height="40" alt=""></a>
+        <a href="https:www.facebook.com/" target="_blank"><img class="logo" src="../Project 1/assets/image/facebook.jpeg" width="40" height="40" alt=""></a>
+        <a href="https:www.instagram.com/" target="_blank"><img class="logo" src="../Project 1/assets/image/instagram.jpeg" width="40" height="40" alt=""></a>
+        <p class="logoContainer">Copyright ⓒ 2022 Bryan Rafferty. All Right Reserved.</p>
+    </div>
+</footer>
+
+</html>
+
+<script src="./assets/js/register.js"></script>
